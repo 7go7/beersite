@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media (max-width: 915px) {
+      .logo-img {
+        max-width: 35vh !important;
+        max-height: 35vh !important;
+        margin-top: 60vh !important;
+      }
+    }
+
+    @media (max-width: 670px) {
+      .logo-img {
+        max-width: 30vh !important;
+        max-height: 30vh !important;
+        margin-top: 65vh !important;
+      }
+
+      .left {
+        background: rgba(0, 255, 0, 0.15);
+      }
+
+      .right {
+        background: rgba(255, 0, 0, 0.15);
+      }
+    }
+
+    body {
+      color: white;
+    }
+
+    .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      top: 0;
+      transition: 0.4s;
+    }
+
+    .choose {
+      max-width: 100vh;
+      max-height: 100vh;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      right: 0;
+    }
+
+    .right:hover {
+      background: rgba(255, 0, 0, 0.3);
+    }
+
+    .left:hover {
+      background: rgba(0, 255, 0, 0.3);
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .logo-img {
+      position: relative;
+      max-width: 50vh;
+      max-height: 50vh;
+      height: 100%;
+      margin: auto;
+      margin-top: 25vh;
+      display: block;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body background="wp-content\themes\balsoy\dist\img\about\map-full.jpg">
+
+  <div class="choose">
+    <div class="split left">
+      <div class="centered">
+        <h2>Да, мне есть 18 лет.</h2>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <h2>Мне нету 18 лет.</h2>
+      </div>
+    </div>
+  </div>
+  <img src="logo.webp" class="logo-img">
+
+</body>
+</html>
